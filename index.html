@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Website personal Qonita Azizah - Mahasiswa Informatika">
+    <title>Qonita Azizah - Mahasiswa Informatika</title>
+    <link rel="icon" type="image/x-icon" href="aku.jpeg">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav" role="navigation" aria-label="Navigasi utama">
+            <div class="nav-brand">
+                <a href="index.html" aria-label="Halaman utama Qonita Azizah">
+                    <i class="fas fa-code"></i> Qonita Azizah
+                </a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="portfolio.html" class="nav-link">Portofolio</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <h1 class="hero-title">
+                            Halo, Saya <span class="gradient-text">Qonita Azizah</span>
+                        </h1>
+                        <p class="hero-subtitle">
+                            Mahasiswa yang tertarik di dunia game yang dimana memiliki tekat
+                            untuk membuat game sendiri dan mengikuti kelas yang berkaitan game.
+                        </p>
+                        <div class="hero-buttons">
+                            <a href="portfolio.html" class="btn btn-primary">
+                                <i class="fas fa-rocket"></i> Lihat Portofolio
+                            </a>
+                            <a href="contact.html" class="btn btn-secondary">
+                                <i class="fas fa-envelope"></i> Hubungi Saya
+                            </a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <div class="profile-image">
+                            <img src="aku.jpeg" alt="Foto profil Qonita Azizah, Mahasiswa Informatika" loading="lazy">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="about">
+            <div class="container">
+                <h2 class="section-title">Tentang Saya</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>
+                            Saya adalah mahasiswa informatika yang tertarik dengan game. Sampai akhirnya
+                            diriku ingin membuat sebuah game sendiri maka dari itu saya menjadi mahasiswa informatika
+                            dan saya belajar css, html, python, rpl dan lain"nya. 
+                        </p>
+                        <div class="skills">
+                            <h3>Skills</h3>
+                            <div class="skills-grid">
+                                <span class="skill-tag">HTML</span>
+                                <span class="skill-tag">CSS</span>
+                                <span class="skill-tag">JavaScript</span>
+                                <span class="skill-tag">python</span>
+                                <span class="skill-tag">Rekayasa perangkat lunak</span>
+                                <span class="skill-tag">Figma</span>
+                                <span class="skill-tag">Virtual Box</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 Qonita. Dibuat dengan <i class="fas fa-heart"></i> hati yang gembira.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const menuToggle = document.querySelector('.menu-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        menuToggle.addEventListener('click', () => {
+            const expanded = menuToggle.getAttribute('aria-expanded') === 'true';
+            menuToggle.setAttribute('aria-expanded', !expanded);
+            navMenu.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
